@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MYSTERIOUS & NOM/MON CHALANT ADVENTURES</title>
+  <style>
+    :root {
+      --emerald: #207a52;
+      --lavender: #d6b3ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: white;
+      color: var(--emerald);
+      min-height: 100vh;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 200px;
+      background-repeat: repeat-y;
+      background-size: cover;
+      z-index: -1;
+      opacity: 0.5;
+    }
+
+    body::before {
+      left: 0;
+      background-image: url('https://cdn.pixabay.com/photo/2018/08/18/18/55/gladiolus-3616559_1280.jpg');
+    }
+
+    body::after {
+      right: 0;
+      background-image: url('https://cdn.pixabay.com/photo/2018/02/17/13/40/lily-3161051_1280.jpg');
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      font-size: 2.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--emerald);
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2rem;
+      gap: 2rem;
+      flex-grow: 1;
+    }
+
+    .image-card {
+      background-color: rgba(32, 122, 82, 0.05);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 220px;
+      transition: transform 0.3s ease;
+    }
+
+    .image-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .image-card img {
+      width: 100%;
+      display: block;
+      border-bottom: 1px solid rgba(32, 122, 82, 0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #f5f5f5;
+      color: var(--emerald);
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    MYSTERIOUS & NOM/MON CHALANT ADVENTURES
+  </header>
+  <div class="main-content">
+    <div class="image-card">
+      <img src="https://chatgpt-image-hosting.s3.amazonaws.com/IMG_5898.jpeg" alt="Gallery Image 1">
+    </div>
+    <div class="image-card">
+      <img src="https://chatgpt-image-hosting.s3.amazonaws.com/IMG_4121.jpg" alt="Gallery Image 2">
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 Mysterious & Nom/Mon Chalant Adventures. All rights reserved.
+  </footer>
+</body>
+</html>
